@@ -1,0 +1,72 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.page-title {
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.row-blue {
+    background: rgba(17, 98, 255, 0.1);
+}
+.currency {
+    font-size: 40px;
+    margin: 0;
+    padding: 30px;
+}
+.price {
+    font-size: 40px;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.watermark {
+    font-size: 40px;
+    padding-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.watermark-link {
+    color: #1162FF;
+    text-decoration: none;
+}
+.watermark-link:hover {
+    text-decoration: underline;
+}
+
+/******************* Media queries **********************/
+@media (max-width: 630px) {
+    .page-title {
+        font-size: 80px;
+    }
+    .currency, .price, .watermark {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 510px) {
+    .page-title {
+        font-size: 60px;
+    }
+    .currency, .price, .watermark {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 380px) {
+    .page-title {
+        font-size: 48px;
+    }
+    .currency, .price, .watermark {
+        font-size: 20px;
+    }
+}

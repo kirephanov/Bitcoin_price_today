@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/normalize.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <title>Bitcoin price today</title>
 </head>
 <body>
-    <h1>Bitcoin price today</h1>
-    <p>RUB {{ btc_rub }}</p>
-    <p>USD {{ btc_usd }}</p>
-    <p>EUR {{ btc_eur }}</p>
+    <h1 class="page-title">Bitcoin price today</h1>
+    <div class="row row-blue">
+        <p class="currency">RUB</p>
+        <p class="price">{{ btc_rub }}</p>
+    </div>
+    <div class="row">
+        <p class="currency">USD</p>
+        <p class="price">{{ btc_usd }}</p>
+    </div>
+    <div class="row row-blue">
+        <p class="currency">EUR</p>
+        <p class="price">{{ btc_eur }}</p>
+    </div>
+    <p class="watermark">Made by <span><a href="https://github.com/kirephanov" target="_blank" class="watermark-link">Kirill Ephanov</a></span></p>
 </body>
 </html>

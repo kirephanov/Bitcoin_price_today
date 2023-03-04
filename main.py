@@ -3,11 +3,10 @@ from flask import Flask
 from flask import render_template
 
 # Import for Bitcoin price
-import datetime
 from forex_python.bitcoin import BtcConverter
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 b = BtcConverter()
 
